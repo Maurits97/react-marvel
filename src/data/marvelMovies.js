@@ -1,11 +1,11 @@
-export const marvelMovies = {
-  one: {
+export const marvelMovies = [
+  {
     title: 'Captain America'
   },
-  two: {
+  {
     title: 'Captain Marvel'
   },
-  three: {
-    title: 'Iron Man'
-  }
-}
+  {
+    title: 'Iron man'
+  },
+]

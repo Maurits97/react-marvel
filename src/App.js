@@ -2,11 +2,10 @@ import { marvelMovies } from './data/marvelMovies';
 import React from 'react';
 
 function App() {
-
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <p>{marvelMovies.one.title}</p>
+      <h1>Marvel Cinematic Universe Movies</h1>
+      {marvelMovies.map((movie) => <p>{movie.title}</p>)}
     </div>
   );
 }
