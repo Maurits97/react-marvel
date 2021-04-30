@@ -1,11 +1,17 @@
-import { marvelMovies } from './data/marvelMovies';
 import React from 'react';
+import { BrowserRouter as HashRouter, Route } from 'react-router-dom'
+
+import Mainpage from './components/Mainpage'
+import Detailpage from './components/Detailpage'
 
 function App() {
   return (
     <div className="App">
-      <h1>Marvel Cinematic Universe Movies</h1>
-      {marvelMovies.map((movie) => <p>{movie.title}</p>)}
+      <HashRouter basename="/#">
+        <Route exact path="/" component={Mainpage}/>
+        <Route path='/:id' component={Detailpage} />
+
+      </HashRouter>
     </div>
   );
 }
