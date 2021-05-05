@@ -42,7 +42,7 @@
 
     .back {
       border: none;
-      width: 250px;
+      width: 300px;
       height: 60px;
       font-size: 20px;
       background-color: white;
@@ -70,6 +70,7 @@
       background-color: black;
       z-index: -1;
       padding: 30px;
+      height: 200px;
 
       .sub-info__element {
         display: flex;
@@ -90,6 +91,16 @@
           color: #5C5C5C;
         }
       }
+    }
+  }
+
+  .trailer {
+    width: 70%;
+    margin: -10px auto 50px auto;
+
+    #ytplayer {
+      width: 100%;
+      min-height: 450px;
     }
   }
 }

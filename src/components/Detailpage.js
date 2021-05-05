@@ -62,8 +62,13 @@ function Detailpage() {
                 <p className="sub-info__name">watchtime</p>
                 <p className="sub-info__value">{movie.watchtime}</p>
               </div>
-
             </div>
+          </div>
+          <div className="trailer">
+            <iframe title={movie.title} id="ytplayer" type="text/html"
+              src={movie.yt}
+              frameborder="0">
+            </iframe>
           </div>
         
       </motion.div>
